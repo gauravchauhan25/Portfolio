@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Home from "./components/Home";
+import TechStacks from "./components/TechStacks";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import { useEffect, useState } from "react";
+import loader from "./images/loader.svg";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center text-center h-screen">
+        <img src={loader} alt="loader" />
+      </div>
+    );
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="overflow-x-hidden bg-[linear-gradient(270deg,#1b1429,#140f23)] mx-auto">
+      <Navbar />
+      <Home />
+      <About />
+      <TechStacks />
+      <Projects />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
