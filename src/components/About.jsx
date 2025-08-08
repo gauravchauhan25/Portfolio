@@ -26,8 +26,8 @@ export default function About() {
           transition={{ delay: 2, type: "spring", stiffness: 200 }}
         >
           <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
+            // whileHover={{ scale: 1.05 }}
+            // transition={{ duration: 0.3 }}
             data-aos="fade-right"
           >
             I am an 22-years-old{" "}
