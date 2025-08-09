@@ -15,7 +15,7 @@ function Footer() {
 
         <div className="flex justify-evenly items-center gap-5 md:gap-8 text-3xl">
           <motion.a 
-            href=""
+            href="https://www.linkedin.com/in/gaurav-chauhan-18102a2b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             className="hover:scale-110"
           >
