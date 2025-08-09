@@ -36,7 +36,7 @@ function Projects() {
                 transition={{ duration: 0.1 }}
                 data-aos="flip-up"
               >
-                <h3 className="text-[#c770f0] text-lg mb-5 md:text-3xl font-bold text-center">
+                <h3 className="text-[#c770f0] text-2xl mb-5 md:text-3xl font-bold text-center">
                   {data.name}
                 </h3>
                 <p className="text-[17px]">{data.description}</p>

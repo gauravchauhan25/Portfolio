@@ -9,7 +9,6 @@ Built with **React.js**, **Tailwind CSS**, and **Framer Motion** for smooth anim
 
 - 📌 **Project Showcase** – Highlighting my best work with live links and GitHub repositories.
 - 🎨 **Responsive Design** – Fully optimized for desktops, tablets, and mobile devices.
-- 🌗 **Dark/Light Mode** – Seamless theme switching for better user experience.
 - 🎞 **Smooth Animations** – Using Framer Motion for clean transitions and interactive elements.
 - 📬 **Contact Form** – Direct email integration for quick communication.
 - 🚀 **Fast Performance** – Optimized build and lightweight design.

@@ -4,8 +4,10 @@ import Home from "./components/Home";
 import TechStacks from "./components/TechStacks";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 import { useEffect, useState } from "react";
 import loader from "./images/loader.svg";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -26,12 +28,16 @@ function App() {
   }
 
   return (
+    
     <div className="overflow-x-hidden bg-[linear-gradient(270deg,#1b1429,#140f23)] mx-auto">
+    <Toaster />
+
       <Navbar />
       <Home />
       <About />
       <TechStacks />
       <Projects />
+      <Contact />
       <Footer />
     </div>
   );

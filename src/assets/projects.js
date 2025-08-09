@@ -2,7 +2,7 @@ export const projects = [
     {
         "id": 1, 
         "name": "DocGuide",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quisquam, qui repellat, debitis fuga ut quibusdam soluta nisi magnam odio beatae voluptas quis blanditiis harum, consequuntur dicta voluptatum corrupti assumenda?",
+        "description": "Navigating government services like passport renewal, tax filing, and driver’s license applications can be confusing. This AI-powered chatbot simplifies the process by providing step-by-step guidance, eligibility checks, and document submission assistance—making government services more accessible and user-friendly.",
         "tech": "React + TypeScript (Tsx), Tailwind",
         "githubUrl": "https://github.com/gauravchauhan25/DocGuide",
         "demoUrl": "https://docguide.vercel.app/",
