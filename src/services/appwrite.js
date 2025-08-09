@@ -15,7 +15,7 @@ export class Services {
     this.databases = new Databases(this.client);
   }
 
-  async feedback(name, email, feedback) {
+  async message(name, email, message) {
     try {
       const response = await this.databases.createDocument(
         config.appwriteDatabaseId,
@@ -24,12 +24,12 @@ export class Services {
         {
           name,
           email,
-          feedback, 
+          message, 
         }
       );
       return response;
     } catch (error) {
-      console.log("Error giving feedback ", error);
+      console.log("Error giving message ", error);
     }
   }
 }

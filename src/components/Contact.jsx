@@ -42,8 +42,8 @@ const formSchema = z.object({
   email: z.string().min(8, {
     message: "Email must be more than 8 characters!",
   }),
-  feedback: z.string().min(10, {
-    message: "Feedback must be at least of 10 characters!",
+  message: z.string().min(10, {
+    message: "message must be at least of 10 characters!",
   }),
 });
 
@@ -55,7 +55,7 @@ function Contact() {
     defaultValues: {
       name: "",
       email: "",
-      feedback: "",
+      message: "",
     },
   });
 
@@ -63,9 +63,9 @@ function Contact() {
   const onSubmit = async (values) => {
     try {
       setLoading(true);
-      const feedbackResponse = await api.feedback(values.name, values.email, values.feedback);
-      if(feedbackResponse) {
-        toast.success("Thank you for Feedback!");
+      const messageResponse = await api.message(values.name, values.email, values.message);
+      if(messageResponse) {
+        toast.success("Thank you for contacting me!");
         console.log("Form values", values);
       }
     } catch (error) {
@@ -123,12 +123,12 @@ function Contact() {
 
               <FormField
                 control={form.control}
-                name="feedback"
+                name="message"
                 render={({ field }) => (
                   <FormItem>
-                    {/* <FormLabel>Feedback</FormLabel> */}
+                    {/* <FormLabel>Message</FormLabel> */}
                     <FormControl>
-                      <Textarea placeholder="Enter your feedback" {...field} required />
+                      <Textarea placeholder="Enter your message" {...field} required />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
