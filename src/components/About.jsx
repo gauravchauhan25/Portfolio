@@ -39,9 +39,7 @@ export default function About() {
             <span className="text-[#c770f0] font-bold">
               Maharaja Surajmal Institute
             </span>
-            .<br /> With a strong passion for technology and problem-solving, I
-            enjoy creating innovative solutions and exploring the endless
-            possibilities of software development.
+            .<br /> Driven by curiosity and a deep enthusiasm for technology, I thrive on tackling challenges and crafting impactful solutions through software development. I enjoy exploring new tools, frameworks, and ideas to push the boundaries of what’s possible, turning complex problems into intuitive and efficient results. My approach blends creativity with logical thinking, allowing me to innovate while delivering practical, high-quality outcomes.
           </motion.div>
         </motion.div>
 
